@@ -30,7 +30,7 @@ register = async function (req,res,next) {
         gender: req.body.gender
     }
     const alreadyRegistered = await srvAuth.checkDuplicate(input);
-    if (!alreadyRegistered.length) {
+    if (alreadyRegistered.length) {
         res.status(403)
         res.json('User already registered')
     } else {
@@ -57,7 +57,7 @@ background: white;
 margin: 0 auto;
 padding: 10px 20px;
 ">
-<p><img src="https://www.pngmart.com/files/20/Thank-You-Calligraphy-PNG-Free-Download.png" alt="Thank you!"></p>
+<p><img src="https://www.pngmart.com/files/20/Thank-You-Calligraphy-PNG-Free-Download.png" alt="Thank you!" width="500"</p>
 <p>Hi ` + name + `,</p>
 <p>Thanks for creating your account on our platform!</p>
 <p>If you need any help from us, please contact us anytime.</p>
@@ -79,7 +79,7 @@ async function sendWelcomeEmail(name, email){
         {
             from: "ipproject1055cse@gmail.com",
             to: email,
-            subject: "Thank you for registering",
+            subject: "Thank you for joining us!",
             html: createHtml(name)
         }
     )
