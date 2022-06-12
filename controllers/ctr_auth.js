@@ -57,7 +57,7 @@ background: white;
 margin: 0 auto;
 padding: 10px 20px;
 ">
-<p><img src="https://www.pngmart.com/files/20/Thank-You-Calligraphy-PNG-Free-Download.png" alt="Thank you!" width="500"</p>
+<p><img src="https://www.pngmart.com/files/20/Thank-You-Calligraphy-PNG-Free-Download.png" alt="Thank you!" width="550"</p>
 <p>Hi ` + name + `,</p>
 <p>Thanks for creating your account on our platform!</p>
 <p>If you need any help from us, please contact us anytime.</p>

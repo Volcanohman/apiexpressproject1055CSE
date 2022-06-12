@@ -3,7 +3,7 @@ const srvAuth = require("../services/srv_auth");
 const decoder = require("jwt-decode");
 
 showSpecific = async function (req, res, next) {
-    let post = await srvPosts.getPostsById(req.params.id);
+    let post = await srvPosts.getPostById(req.params.id);
     if (post) {
         res.json(post);
     }
