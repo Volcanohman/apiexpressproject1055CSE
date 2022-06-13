@@ -4,7 +4,7 @@ const hlpJWT = require('../helpers/hlp_JWT');
 const ctrProfile = require('../controllers/ctr_profile');
 
 router.post('/', (req, res) => {
-    res.redirect(307, '/api/auth/register');
+    res.redirect(308, '/api/auth/register');
 });
 
 router.delete('/:id', hlpJWT.authenticateToken,  ctrProfile.remove);
